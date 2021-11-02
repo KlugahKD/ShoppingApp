@@ -9,11 +9,11 @@ const LoginPage = ({navigation})=>{
 
     return(
         <View style={styles.mainView}>
-           <view style={styles.TopView}>
+           <View style={styles.TopView}>
            <Image style={styles.ImageStyle} source={{uri:'https://images.unsplash.com/photo-1635880522974-a152321ad617?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=892&q=80'}}/>
-           </view>
+           </View>
 
-           <view style={styles.BottomView}>
+           <View style={styles.BottomView}>
                <Text style={styles.Heading}>
                    Welcome {"\n"}
                    Back
@@ -30,7 +30,7 @@ const LoginPage = ({navigation})=>{
                    Sign Up
                </Text>
                </TouchableOpacity>
-           </view>
+           </View>
         </View>
     )
 }

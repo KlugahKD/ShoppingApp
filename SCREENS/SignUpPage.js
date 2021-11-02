@@ -1,15 +1,15 @@
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import {Text, StyleSheet,Button,View, Image, TextInput, TouchableOpacity, ScrollView } from "react-native";
+import {Text, StyleSheet, View, Image, TextInput, TouchableOpacity, ScrollView } from "react-native";
 
 const SignUpPage = ()=>{
     return(
       <View style={styles.mainView}>
-         <view style={styles.TopView}>
+         <View style={styles.TopView}>
          <Image style={styles.ImageStyle} source={{uri: 'https://images.unsplash.com/photo-1635880522974-a152321ad617?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=892&q=80'}}/>
-         </view>
+         </View>
 
-       <Scrollview style={styles.BottomView}>
+       <ScrollView style={styles.BottomView}>
            <Text style={styles.Heading}>
                Welcome {"\n"}
                Back
@@ -29,7 +29,7 @@ const SignUpPage = ()=>{
                Sign Up
            </Text>
            </TouchableOpacity>
-       </Scrollview>
+       </ScrollView>
     </View>
 )
 }
@@ -61,7 +61,6 @@ BottomView:{
     borderTopRightRadius: 30,
 },
 ImageStyle:{
-width: "50%",
 resizeMode: "contain", 
 },
 Heading:{
