@@ -19,12 +19,13 @@ const LoginPage = ({navigation})=>{
                    Back
                </Text>
                <View style={styles.FormView}>   
-                  <TextInput placeholder={"Enter Email Address"} placeholderTextColor={"#fff"} style={styles.TextInput}/>
-                  <TextInput placeholder={"Enter PassWord"} secureTextEntry={true} placeholderTextColor={"#fff"} style={styles.TextInput}/>
+                  <TextInput placeholder={"Email Address"} placeholderTextColor={"#fff"} style={styles.TextInput}/>
+                  <TextInput placeholder={" Password"} secureTextEntry={true} placeholderTextColor={"#fff"} style={styles.TextInput}/>
                   <TouchableOpacity style={styles.Button}> 
                       <Text style={styles.ButtonText}>Login</Text>
                   </TouchableOpacity>
                </View>
+               <Text style={styles.QuestionText}> Dont have an account? </Text>
                <TouchableOpacity style={styles.TextButton} onPress={navigate}>
                <Text style={styles.SignUpText}>
                    Sign Up
@@ -42,13 +43,13 @@ const styles = StyleSheet.create({
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#696969",
+        backgroundColor: "#fff",
     },
 
     TopView:{
         width: "100%",
         height: "30%",
-        backgroundColor: "#696969",
+        backgroundColor: "#fff",
         justifyContent: "center",
         alignItems: "center",
 
@@ -104,8 +105,17 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         fontSize: 18,
     },
+
+    QuestionText:{
+            color: "#fff",
+            textAlign: "center", 
+            fontWeight: "bold",
+            fontSize: 18,
+            
+    },
+
     SignUpText:{
-        color: "gray",
+        color: "#fff",
     },
     TextButton:{
         width: "100%",
