@@ -57,10 +57,10 @@ const Cart = ({navigation}) => {
               <Text style={{fontSize: 18, fontWeight: 'bold'}}>
                 Total Price
               </Text>
-              <Text style={{fontSize: 18, fontWeight: 'bold'}}>$50</Text>
+              <Text style={{fontSize: 18, fontWeight: 'bold'}}>$50.95</Text>
             </View>
 
-          <TouchableOpacity onPress= {() => {navigation.navigate("Cart");}} >
+          <TouchableOpacity onPress= {() => {navigation.navigate("CheckOutPage");}} >
           <View style={{...style.btnContainer, marginTop: 40, marginBottom: 40}}>
         <Text style={{...style.title, color: COLORS.white}}>CheckOut</Text>
           </View>

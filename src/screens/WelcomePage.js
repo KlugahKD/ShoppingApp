@@ -3,7 +3,7 @@ import {StatusBar, View, Text, StyleSheet, SafeAreaView, Image, Pressable,}
 from 'react-native';
 import COLORS from '../consts/colors';
 
-const image = {uri: "https://cdn.pixabay.com/photo/2018/03/19/18/20/tea-time-3240766__340.jpg"}
+const image = {uri: "https://cdn.pixabay.com/photo/2015/07/31/11/45/library-869061__340.jpg"}
 const WelcomePage = ({navigation}) => {
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>

@@ -2,6 +2,7 @@ import React from 'react';
 import {SafeAreaView, StyleSheet, View, Text, Image, ScrollView, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import COLORS from '../consts/colors';
+import books from '../consts/books';
 
 const DetailsPage = ({navigation, route}) => {
   const item = route.params;
@@ -30,11 +31,10 @@ const DetailsPage = ({navigation, route}) => {
             }}>
             <Text
               style={{fontSize: 25, fontWeight: 'bold', color: "white"}}>
-              {item.name}
+              {item.name} {"\n"}
+              {"\n"}
+              {item.about}
             </Text>
-            <View style={style.iconContainer}>
-              <Icon name="favorite-border" color={"black"} size={25} />
-            </View>
           </View>
           <Text style={style.detailsText}>
             
@@ -67,14 +67,7 @@ const style = StyleSheet.create({
     borderTopRightRadius: 40,
     borderTopLeftRadius: 40,
   },
-  iconContainer: {
-    backgroundColor: "white",
-    height: 50,
-    width: 50,
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 30,
-  },
+
   detailsText: {
     marginTop: 10,
     lineHeight: 22,

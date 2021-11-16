@@ -27,6 +27,24 @@ const books = [
     price: '9.55',
     image: {uri: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/sci-fi-book-cover-template-a1ec26573b7a71617c38ffc6e356eef9.jpg?ts=1561547637"},
   },
+  {
+    id: '5',
+    name: 'WILL',
+    about: "One of the most dynamic and globally recognized entertainment forces of our time opens up fully about his life, in a brave and inspiring book that traces his learning curve to a place where outer success, inner happiness, and human connection are aligned. Along the way, Will tells the story in full of one of the most amazing rides through the worlds of music and film that anyone has ever had.",
+    price: '0.00',
+    image: {uri: "https://images-na.ssl-images-amazon.com/images/I/911cmGSgcvL._AC_UL210_SR195,210_.jpg"},
+  },
+{
+  id: '6',
+  name: 'HUMANS',
+  about: "Brandon Stanton created Humans of New York in 2010. What began as a photographic census of life in New York City, soon evolved into a storytelling phenomenon. A global audience of millions began following HONY daily. Over the next several years, Stanton broadened his lens to include people from across the world.",
+  price: '27.99',
+  image: {uri: "https://images-na.ssl-images-amazon.com/images/I/51B-BOBtQtL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg"},
+},
+
+
+
 ];
+
 
 export default books;
